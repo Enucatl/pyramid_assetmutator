@@ -177,7 +177,7 @@ class Mutator(object):
                 os.makedirs(new_dirname)
             
             with open(self.new_fullpath, 'w') as f:
-                f.write(out)
+                f.write(out.decode("utf-8"))
             
             self.exists = True
             
